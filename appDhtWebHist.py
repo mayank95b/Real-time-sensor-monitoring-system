@@ -4,7 +4,7 @@ import io
 from flask import Flask, render_template, send_file, make_response, request
 app = Flask(__name__)
 import sqlite3
-conn=sqlite3.connect('/home/pi/IoTProjects/Sensors_Database/sensorsData.db')
+conn=sqlite3.connect('.../sensorsData.db')
 curs=conn.cursor()
 # Retrieve LAST data from database
 def getLastData():
