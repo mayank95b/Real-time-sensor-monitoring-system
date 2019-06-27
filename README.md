@@ -50,11 +50,11 @@ sqlite> COMMIT;
 
 import sqlite3 as lite
 
-import sys
+    import sys
 
-con = lite.connect('sensorsData.db')
+    con = lite.connect('sensorsData.db')
 
-with con: 
+    with con: 
 
     cur = con.cursor() 
     
