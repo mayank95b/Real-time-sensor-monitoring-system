@@ -48,20 +48,20 @@ sqlite> COMMIT;
 
 2. Using Python
 
-import sqlite3 as lite
+        import sqlite3 as lite
 
-    import sys
+        import sys
 
-    con = lite.connect('sensorsData.db')
+        con = lite.connect('sensorsData.db')
 
-    with con: 
+        with con: 
 
-    cur = con.cursor() 
-    
-    cur.execute("DROP TABLE IF EXISTS DHT_data")
-    
-    cur.execute("CREATE TABLE DHT_data(timestamp DATETIME, temp NUMERIC, hum NUMERIC)")
-    
+        cur = con.cursor() 
+
+        cur.execute("DROP TABLE IF EXISTS DHT_data")
+
+        cur.execute("CREATE TABLE DHT_data(timestamp DATETIME, temp NUMERIC, hum NUMERIC)")
+
  Open the above code from my GitHub: createTable.py
  
 Run it on your Terminal:
