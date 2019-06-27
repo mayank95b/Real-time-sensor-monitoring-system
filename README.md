@@ -45,3 +45,19 @@ sqlite> BEGIN;
 sqlite> CREATE TABLE DHT_data (timestamp DATETIME,  temp NUMERIC, hum NUMERIC);
 
 sqlite> COMMIT;
+
+2. Using Python
+
+import sqlite3 as lite
+
+import sys
+
+con = lite.connect('sensorsData.db')
+
+with con: 
+
+    cur = con.cursor() 
+    
+    cur.execute("DROP TABLE IF EXISTS DHT_data")
+    
+    cur.execute("CREATE TABLE DHT_data(timestamp DATETIME, temp NUMERIC, hum NUMERIC)")
