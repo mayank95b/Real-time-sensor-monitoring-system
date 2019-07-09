@@ -10,19 +10,19 @@ Follow the below steps to create a database.
 
 1. Install SQLite to Raspberry Pi using the command:
 
-     sudo apt-get install sqlite3
+       sudo apt-get install sqlite3
 
 2. Create a directory to develop the project:
 
-     mkdir Sensors_Database
+       mkdir Sensors_Database
 
 3. Move to this directory:
 
-     cd mkdir Sensors_Database/
+       cd mkdir Sensors_Database/
 
 3. Give a name and create a database like databaseName.db (in my case “sensorsData.db”):
 
-     sqlite3 sensorsData.db
+       sqlite3 sensorsData.db
 
 Creating a table:
  
