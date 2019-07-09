@@ -80,7 +80,7 @@ shell after, using the .quit command.
 
      sqlite> .table
      DHT_data
-    sqlite> .quit
+     sqlite> .quit
 
 
 Installing DHT Library
@@ -106,13 +106,10 @@ Capturing Data Automatically
 
 Open a new Terminal window and enter with bellow Python code:
 
-            import time
-
-            import sqlite3
-
-            import Adafruit_DHT
-
-            dbname='sensorsData.db'
+        import time
+        import sqlite3
+        import Adafruit_DHT
+        dbname='sensorsData.db'
         sampleFreq = 1*60 # time in seconds ==> Sample each 1 min
         # get data from DHT sensor
         def getDHTdata():	
