@@ -36,15 +36,15 @@ Using a Python program.
 
 Open the database that was created in the last step:
 
-sqlite3 sensorsData.db
+    sqlite3 sensorsData.db
 
 And entering with SQL statements:
 
-sqlite> BEGIN;
+    sqlite> BEGIN;
 
-sqlite> CREATE TABLE DHT_data (timestamp DATETIME,  temp NUMERIC, hum NUMERIC);
+    sqlite> CREATE TABLE DHT_data (timestamp DATETIME,  temp NUMERIC, hum NUMERIC);
 
-sqlite> COMMIT;
+    sqlite> COMMIT;
 
 2. Using Python
 
