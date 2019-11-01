@@ -4,7 +4,7 @@ From Sensor Data to Visualization:  Using Flask and SQLite with Raspberry Pi
 
 Capturing real data (RPi/DHT11), saving them in a database (SQLite), creating graphs (Matplotlib) and presenting them on a web page (Flask).
 
-Installation:
+### Installation:
 
 Follow the below steps to create a database.
 
@@ -24,15 +24,13 @@ Follow the below steps to create a database.
 
        sqlite3 sensorsData.db
 
-Creating a table:
+### Creating a table:
  
 To create a table, you can do it:
 
-Directly on the SQLite shell, or
+Directly on the SQLite shell, or Using a Python program.
 
-Using a Python program.
-
-1. Using Shell:
+#### 1. Using Shell:**
 
 Open the database that was created in the last step:
 
@@ -46,7 +44,7 @@ And entering with SQL statements:
 
     sqlite> COMMIT;
 
-2. Using Python
+#### 2. Using Python
 
         import sqlite3 as lite
 
@@ -62,9 +60,7 @@ And entering with SQL statements:
 
         cur.execute("CREATE TABLE DHT_data(timestamp DATETIME, temp NUMERIC, hum NUMERIC)")
 
- Open the above code from my GitHub: createTable.py
- 
-Run it on your Terminal:
+Open the above code from my GitHub: createTable.py and Run it on your Terminal:
 
      python3 createTableDHT.py
 
@@ -83,7 +79,7 @@ shell after, using the .quit command.
      sqlite> .quit
 
 
-Installing DHT Library
+#### Installing DHT Library
 
 On your Raspberry, starting on /home, go to /Documents:
 
@@ -102,7 +98,7 @@ Then go to the directory of the library (subfolder that is automatically created
 
     sudo python3 setup.py install
     
-Capturing Data Automatically
+#### Capturing Data Automatically
 
 Open a new Terminal window and enter with bellow Python code:
 
