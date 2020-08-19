@@ -1,4 +1,4 @@
-# Real Time Sensor Monitoring System suing Raspberry pi
+# Real Time Sensor Monitoring System 
 
 From Sensor Data to Visualization:  Using Flask and SQLite with Raspberry Pi
 
