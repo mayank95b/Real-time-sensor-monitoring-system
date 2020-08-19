@@ -1,4 +1,4 @@
-# RaspberryPi_SqliteDB
+# Real Time Sensor Monitoring System suing Raspberry pi
 
 From Sensor Data to Visualization:  Using Flask and SQLite with Raspberry Pi
 
